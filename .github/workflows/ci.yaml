@@ -26,6 +26,7 @@ jobs:
 
             - name: run tests
               run: |
+                   cd src/product-catalog
                    go test ./...
 
     code-quality:

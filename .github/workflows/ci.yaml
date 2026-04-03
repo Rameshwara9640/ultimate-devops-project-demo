@@ -89,7 +89,7 @@ jobs:
 
         - name: update Deployment image
           run: | 
-               sed -i "s|image: .*|image: ${{ secrets.Docker_USERNAME }}/product-catalog:${{github.run_id}}|" src/productcatalog/kubernetes/deploy.yaml
+               sed -i "s|image: .*|image: ${{ secrets.Docker_USERNAME }}/product-catalog:${{github.run_id}}|" kubernetes/productcatalog/deploy.yaml
 
         - name: commit and push changes
           run: | 

@@ -97,7 +97,7 @@ jobs:
               git config --global user.name "Rameshwara9640"
               git branch
               git remote -v
-              git pull origin main
+              git pull origin HEAD:main
               git add kubernetes/productcatalog/deploy.yaml
               git commit -m "update product catalog"
               git push origin HEAD:main
